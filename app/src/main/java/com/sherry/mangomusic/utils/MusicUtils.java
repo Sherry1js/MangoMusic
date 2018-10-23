@@ -50,12 +50,21 @@ public class MusicUtils{
      * 定义一个方法用来格式化获取到的时间
      */
     public static String formatTime(int time) {
-        if (time / 1000 % 60 < 10) {
-            return time / 1000 / 60 + ":0" + time / 1000 % 60;
+        int minute = time / 1000 / 60;
+        int second = time / 1000 % 60;
+        String minuteString;
+        String secondString;
+        if(minute < 10) {
+            minuteString = "0" + minute;
         } else {
-            return time / 1000 / 60 + ":" + time / 1000 % 60;
+            minuteString = "" + minute;
         }
-
+        if(second < 10) {
+            secondString = "0" + second;
+        } else {
+            secondString = "" + second;
+        }
+        return minuteString + ":" + secondString;
     }
 }
 

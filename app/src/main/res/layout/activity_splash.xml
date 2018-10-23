@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="StrawBerry"
-            android:textSize="30sp"
+            android:textSize="26sp"
             android:layout_below="@+id/ll_logo"
             android:layout_centerInParent="true"
             android:textColor="@color/pink"/>
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3.1.5"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_marginTop="10dp"
             android:textColor="@color/pink"/>
     </LinearLayout>
